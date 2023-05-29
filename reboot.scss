@@ -5,23 +5,3 @@
 *::after {
     box-sizing: border-box;
 }
-
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-}
-
-body {
-    margin: 0;
-}
-
-/* HTML5 =================================================================== */
-
-header, hgroup, main, footer,
-section, aside, article,
-figure, figcaption,
-menu, nav,
-time,
-details {
-    display: block;
-}
