@@ -1,60 +1,21 @@
-/* Document ================================================================= */
-
-/**
- * 1. Change from `box-sizing: content-box` so that `width` is not affected by
- * `padding` or `border`.
- */
+/* Document ================================================================ */
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box; /* 1 */
+    box-sizing: border-box;
 }
-
-/**
- *
- * 1. Remove the margin in all browsers.
- * 2. Remove the padding in all browsers.
- */
-
-html,
-body {
-    margin: 0; /* 1 */
-    padding: 0; /* 2 */
-}
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Use a more readable tab size.
- * 3. Prevent adjustments of font size after orientation changes in iOS.
- * 4. Remove gray overlay on links for iOS.
- */
 
 html {
-    line-height: 1.15; /* 1 */
-    tab-size: 4; /* 2 */
-    -moz-tab-size: 4; /* 2 */
-    -webkit-text-size-adjust: 100%; /* 3 */
-    -webkit-tap-highlight-color: transparent; /* 4 */
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
 }
-
-/**
- * 1. Defines the scrolling behavior within an element - smooth scrolling or
- * instant transition.
- * 2. The browser emphasizes rendering speed over legibility and geometric
- * precision when drawing text. It disables kerning and ligatures.
- */
 
 body {
-    scroll-behavior: smooth; /* 1 */
-    text-rendering: optimizeSpeed; /* 2 */
+    margin: 0;
 }
 
-/* HTML5 ==================================================================== */
-
-/**
- * 1. Render the element consistently in IE.
- */
+/* HTML5 =================================================================== */
 
 header, hgroup, main, footer,
 section, aside, article,
@@ -62,28 +23,5 @@ figure, figcaption,
 menu, nav,
 time,
 details {
-    display: block /* 1 */;
-}
-
-/* Grouping content ========================================================= */
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-hr {
-    box-sizing: content-box; /* 1 */
-    height: 0; /* 1 */
-    overflow: visible; /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-pre {
-    font-family: monospace, monospace; /* 1 */
-    font-size: 1em; /* 2 */
+    display: block;
 }
