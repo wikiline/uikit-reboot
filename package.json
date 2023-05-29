@@ -2,9 +2,10 @@
   "name": "@wikiline/uikit-reboot",
   "version": "0.1.0",
   "description": "Package for integrating reset styles",
-  "main": "reboot.css",
+  "main": "reboot.min.css",
   "files": [
-    "reboot.css"
+    "./**/*.css",
+    "./**/*.scss"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
