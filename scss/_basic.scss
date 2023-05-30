@@ -310,10 +310,12 @@ details {
 
 /**
  1. Add the correct display in all browsers.
+ 2. Add the correct cursor in all browsers.
  */
 
 summary {
     display: list-item; /* 1 */
+    cursor: pointer; /* 2 */
 }
 
 /**
@@ -332,6 +334,14 @@ summary {
 
 template {
     display: none; /* 1 */
+}
+
+/**
+ * 1. Remove border from iframe.
+ */
+
+iframe {
+    border: 0; /* 1 */
 }
 
 /**
