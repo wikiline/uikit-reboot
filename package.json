@@ -1,0 +1,38 @@
+{
+  "name": "@wikiline/uikit-reboot",
+  "version": "0.1.0",
+  "description": "Package for integrating reset styles",
+  "main": "reboot.min.css",
+  "files": [
+    "./**/*.css",
+    "./**/*.scss"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wikiline/uikit-reboot.git"
+  },
+  "keywords": [
+    "ui",
+    "uikit",
+    "reboot",
+    "web",
+    "front-end",
+    "css",
+    "scss"
+  ],
+  "author": {
+    "name": "bu0nq",
+    "email": "hello@bu0nq.ru"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wikiline/uikit-reboot/issues"
+  },
+  "homepage": "https://github.com/wikiline/uikit-reboot#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
