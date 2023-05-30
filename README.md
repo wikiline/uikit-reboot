@@ -17,7 +17,7 @@ npm i @wikiline/uikit-reboot
 
 ## Usage (CSS)
 
-CSS files are located in the `root` directory:
+CSS files located in the `root` directory:
 
 * `reboot.css`
 * `reboot.min.css`
@@ -33,7 +33,7 @@ To import all fonts, you can use:
 
 ## Usage (SCSS)
 
-CSS files are located in the `root` directory:
+SCSS files located in the `root` directory:
 
 * `reboot.scss`
 
