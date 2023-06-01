@@ -26,3 +26,24 @@ html {
     -webkit-text-size-adjust: 100%; /* 2 */
     -webkit-tap-highlight-color: transparent; /* 3*/
 }
+
+/**
+ 1. Remove the margin in all browsers.
+ */
+
+body {
+    margin: 0; /* 1 */
+}
+
+/**
+ 1. Rendering of HTML5 elements in IE.
+ */
+
+header, hgroup, main, footer,
+section, aside, article,
+figure, figcaption,
+menu, nav,
+time,
+details {
+    display: block; /* 1 */
+}
