@@ -2,15 +2,12 @@
 
 /**
  1. Reset box-sizing in all browsers.
- 2. Reset borders in all browsers.
  */
 
 *,
 ::before,
 ::after {
     box-sizing: border-box; /* 1 */
-    border-style: solid; /* 2 */
-    border-width: 0; /* 2 */
 }
 
 /* Document ================================================================ */
@@ -246,6 +243,30 @@ template {
 /* Forms =================================================================== */
 
 /**
+ 1. Correct the padding in Firefox.
+ */
+
+fieldset {
+    padding: 0; /* 1 */
+}
+
+/**
+ 1. Correct the text wrapping in Edge and IE.
+ 2. Correct the color inheritance from `fieldset` elements in IE.
+ 3. Remove the padding so developers are not caught out when they zero out
+ `fieldset` elements in all browsers.
+ */
+
+legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
  1. Change the font styles in all browsers.
  2. Remove the margin in Firefox and Safari.
  */
@@ -314,46 +335,6 @@ button:-moz-focusring,
 }
 
 /**
- 1. Correct the padding in Firefox.
- */
-
-fieldset {
-    padding: 0; /* 1 */
-}
-
-/**
- 1. Correct the text wrapping in Edge and IE.
- 2. Correct the color inheritance from `fieldset` elements in IE.
- 3. Remove the padding so developers are not caught out when they zero out
- `fieldset` elements in all browsers.
- */
-
-legend {
-    box-sizing: border-box; /* 1 */
-    color: inherit; /* 2 */
-    display: table; /* 1 */
-    max-width: 100%; /* 1 */
-    padding: 0; /* 3 */
-    white-space: normal; /* 1 */
-}
-
-/**
- 1. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-    vertical-align: baseline; /* 1 */
-}
-
-/**
- 1. Remove the default vertical scrollbar in IE 10+.
- */
-
-textarea {
-    overflow: auto; /* 1 */
-}
-
-/**
  1. Add the correct box sizing in IE 10.
  2. Remove the padding in IE 10.
  */
@@ -366,11 +347,13 @@ textarea {
 
 /**
  1. Correct the cursor style of increment and decrement buttons in Chrome.
+ 2. Fix appearance for Firefox
  */
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
     height: auto; /* 1 */
+    -moz-appearance: textfield; /* 2 */
 }
 
 /**
@@ -399,4 +382,20 @@ textarea {
 ::-webkit-file-upload-button {
     -webkit-appearance: button; /* 1 */
     font: inherit; /* 2 */
+}
+
+/**
+ 1. Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+}
+
+/**
+ 1. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    vertical-align: baseline; /* 1 */
 }
