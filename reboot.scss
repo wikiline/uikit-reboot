@@ -194,6 +194,45 @@ sup {
     top: -0.5em; /* 1 */
 }
 
+/**
+ 1. Correct table border color inheritance in all Chrome and Safari.
+ 2. Add the correct border collapse in all browsers.
+*/
+
+table {
+    border-color: inherit; /* 1 */
+    border-collapse: collapse; /* 2 */
+}
+
+/**
+ 1. Add the correct text align in all browsers.
+ */
+
+caption {
+    text-align: left; /* 1 */
+}
+
+/**
+ 1. Add the correct vertical align in all browsers.
+ 2. Add the correct padding in all browsers.
+ */
+
+td,
+th {
+    vertical-align: top; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ 1. Add the correct font align in all browsers.
+ 2. Add the correct font weight in all browsers.
+ */
+
+th {
+    text-align: left; /* 1 */
+    font-weight: bold; /* 2 */
+}
+
 /* Embedded content ======================================================== */
 
 /**
@@ -230,6 +269,14 @@ summary {
 
 template {
     display: none; /* 1 */
+}
+
+/*
+ 1. Remove outline for editable content.
+ */
+
+[contenteditable]:focus {
+    outline: auto; /* 1 */
 }
 
 /**
