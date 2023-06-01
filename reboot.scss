@@ -47,3 +47,152 @@ time,
 details {
     display: block; /* 1 */
 }
+
+/* Grouping content ======================================================== */
+
+/**
+ 1. Add the correct box sizing in Firefox.
+ 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+/**
+ 1. Correct the inheritance and scaling of font size in all browsers.
+ 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics ==================================================== */
+
+/**
+ 1. Inheriting the font size in all browsers.
+ 2. Inheriting the font weight in all browsers.
+ 3. Remove the margin in all browsers.
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit; /* 1 */
+    font-weight: inherit; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ 1. Remove the margin in all browsers.
+ 2. Remove the padding in all browsers.
+ 3. Remove the list style in all browsers.
+ */
+
+ul,
+ol {
+    margin: 0; /* 1 */
+    padding: 0; /* 2 */
+    list-style: none; /* 3 */
+}
+
+/**
+ 1. Add the correct font weight in all browsers.
+ */
+
+dt {
+    font-weight: bold; /* 1 */
+}
+
+/**
+ 1. Remove the margin in all browsers.
+ */
+
+dd {
+    margin: 0; /* 1 */
+}
+
+/**
+ 1. Remove the gray background on active links in IE 10.
+ */
+
+a {
+    background-color: transparent; /* 1 */
+}
+
+/**
+ 1. Remove the bottom border in Chrome 57-
+ 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ 1. Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder; /* 1 */
+}
+
+/**
+ 1. Correct the inheritance and scaling of font size in all browsers.
+ 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/**
+ 1. Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%; /* 1 */
+}
+
+/**
+ 1. Add the correct font size in all browsers.
+ 2. Add the correct line height in all browsers.
+ 3. Add the correct position in all browsers.
+ 4. Add the correct vertical align in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%; /* 1 */
+    line-height: 0; /* 2 */
+    position: relative; /* 3 */
+    vertical-align: baseline; /* 4 */
+}
+
+/**
+ 1. Add the correct position bottom in all browsers.
+ */
+
+sub {
+    bottom: -0.25em; /* 1 */
+}
+
+/**
+ 1. Add the correct position top in all browsers.
+ */
+
+sup {
+    top: -0.5em; /* 1 */
+}
