@@ -196,3 +196,67 @@ sub {
 sup {
     top: -0.5em; /* 1 */
 }
+
+/* Embedded content ======================================================== */
+
+/**
+ 1. Remove the border on images inside links in IE 10.
+ */
+
+img {
+    border-style: none; /* 1 */
+}
+
+/* Interactive ============================================================= */
+
+/**
+ 1. Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+    display: block; /* 1 */
+}
+
+/**
+ 1. Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item; /* 1 */
+}
+
+/* Misc ==================================================================== */
+
+/**
+ 1. Add the correct display in IE 10+.
+ */
+
+template {
+    display: none; /* 1 */
+}
+
+/**
+ 1. Add the correct display in IE 10.
+ */
+
+[hidden] {
+    display: none; /* 1 */
+}
+
+/* Forms =================================================================== */
+
+/**
+ 1. Change the font styles in all browsers.
+ 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
