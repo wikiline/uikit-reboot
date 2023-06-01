@@ -1,28 +1,11 @@
-/* Reset box-model and set borders ========================================= */
+/* Document ================================================================ */
 /**
- 1. Add the correct box sizing in all browsers.
- 2. Add the correct border style in all browsers.
- 3. Add the correct border width in all browsers.
+ 1. Reset box-sizing in all browsers.
  */
 *,
-*::before,
-*::after {
+::before,
+::after {
   box-sizing: border-box; /* 1 */
-  border-style: solid; /* 2 */
-  border-width: 0; /* 3 */
-}
-
-/* HTML5 =================================================================== */
-/**
- 1. Correct the render elements consistently in IE.
- */
-header, hgroup, main, footer,
-section, aside, article,
-figure, figcaption,
-menu, nav,
-time,
-details {
-  display: block; /* 1 */
 }
 
 /* Document ================================================================ */
@@ -37,28 +20,23 @@ html {
   -webkit-tap-highlight-color: transparent; /* 3*/
 }
 
-/* Sections ================================================================ */
 /**
- 1. Defines the scrolling behavior within an element - smooth scrolling or
- instant transition.
- 2. The browser emphasizes rendering speed over legibility and geometric
- precision when drawing text. It disables kerning and ligatures.
+ 1. Remove the margin in all browsers.
  */
 body {
-  scroll-behavior: smooth; /* 1 */
-  text-rendering: optimizeSpeed; /* 2 */
+  margin: 0; /* 1 */
 }
 
 /**
- 1. Remove the margin in all browsers.
- 2. Inheriting the font size in all browsers.
- 3. Inheritance of font weight in all browsers.
+ 1. Rendering of HTML5 elements in IE.
  */
-h1, h2, h3, h4, h5, h6,
-p {
-  margin: 0; /* 1 */
-  font-size: inherit; /* 2 */
-  font-weight: inherit; /* 3 */
+header, hgroup, main, footer,
+section, aside, article,
+figure, figcaption,
+menu, nav,
+time,
+details {
+  display: block; /* 1 */
 }
 
 /* Grouping content ======================================================== */
@@ -74,23 +52,56 @@ hr {
 
 /**
  1. Correct the inheritance and scaling of font size in all browsers.
- 2. Inheriting the font size in all browsers.
+ 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
   font-family: monospace, monospace; /* 1 */
-  font-size: inherit; /* 2 */
-}
-
-/**
- 1. Add the correct margin in all browsers.
- 2. Inheriting the font size in all browsers.
- */
-address {
-  margin: 0; /* 1 */
-  font-style: inherit; /* 2 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics ==================================================== */
+/**
+ 1. Inheriting the font size in all browsers.
+ 2. Inheriting the font weight in all browsers.
+ 3. Remove the margin in all browsers.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit; /* 1 */
+  font-weight: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ 1. Remove the margin in all browsers.
+ 2. Remove the padding in all browsers.
+ 3. Remove the list style in all browsers.
+ */
+ul,
+ol {
+  margin: 0; /* 1 */
+  padding: 0; /* 2 */
+  list-style: none; /* 3 */
+}
+
+/**
+ 1. Add the correct font weight in all browsers.
+ */
+dt {
+  font-weight: bold; /* 1 */
+}
+
+/**
+ 1. Remove the margin in all browsers.
+ */
+dd {
+  margin: 0; /* 1 */
+}
+
 /**
  1. Remove the gray background on active links in IE 10.
  */
@@ -104,7 +115,6 @@ a {
  */
 abbr[title] {
   border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted; /* 2 */
 }
@@ -119,13 +129,13 @@ strong {
 
 /**
  1. Correct the inheritance and scaling of font size in all browsers.
- 2. Inheriting the font size in all browsers.
+ 2. Correct the odd `em` font sizing in all browsers.
  */
 code,
 kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
-  font-size: inherit; /* 2 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -136,21 +146,8 @@ small {
 }
 
 /**
- 1. Add the correct margin in all browsers.
- 2. Add the correct quotes in all browsers.
- */
-blockquote, q {
-  margin: 0;
-  quotes: none; /* 2 */
-}
-blockquote::before, blockquote::after, q::before, q::after {
-  content: ""; /* 2 */
-}
-
-/* Sub and Sup ============================================================= */
-/**
  1. Add the correct font size in all browsers.
- 2. Add the correct line-height in all browsers.
+ 2. Add the correct line height in all browsers.
  3. Add the correct position in all browsers.
  4. Add the correct vertical align in all browsers.
  */
@@ -176,46 +173,17 @@ sup {
   top: -0.5em; /* 1 */
 }
 
-/* Lists =================================================================== */
-/**
- 1. Remove the margin in all browsers.
- 2. Remove the padding in all browsers.
- 3. Correct the list-style in all browsers.
- */
-ul, ol, li {
-  margin: 0; /* 1 */
-  padding: 0; /* 2 */
-  list-style-type: none; /* 3 */
-}
-
-/**
- 1. Add the correct font weight.
- */
-dt {
-  font-weight: bold; /* 1 */
-}
-
-/**
- 1. Remove the margin in all browsers.
- */
-dd {
-  margin-left: 0; /* 1 */
-}
-
-/* Tables ================================================================== */
 /**
  1. Correct table border color inheritance in all Chrome and Safari.
- 2. Correct table border collapse inheritance in all Chrome and Safari.
- 3. Remove most spacing between table cells.
- */
+ 2. Add the correct border collapse in all browsers.
+*/
 table {
   border-color: inherit; /* 1 */
   border-collapse: collapse; /* 2 */
-  border-spacing: 0; /* 3 */
 }
 
 /**
- 1. Add the correct text align.
+ 1. Add the correct text align in all browsers.
  */
 caption {
   text-align: left; /* 1 */
@@ -232,7 +200,7 @@ th {
 }
 
 /**
- 1. Add the correct text align in all browsers.
+ 1. Add the correct font align in all browsers.
  2. Add the correct font weight in all browsers.
  */
 th {
@@ -246,18 +214,6 @@ th {
  */
 img {
   border-style: none; /* 1 */
-}
-
-/* Replaced content ======================================================== */
-/**
- 1. Prevent vertical alignment issues.
- */
-svg,
-img,
-embed,
-object,
-iframe {
-  vertical-align: bottom; /* 1 */
 }
 
 /* Interactive ============================================================= */
@@ -275,23 +231,23 @@ summary {
   display: list-item; /* 1 */
 }
 
+/* Misc ==================================================================== */
 /**
+ 1. Add the correct display in IE 10+.
+ */
+template {
+  display: none; /* 1 */
+}
+
+/*
  1. Remove outline for editable content.
  */
 [contenteditable]:focus {
   outline: auto; /* 1 */
 }
 
-/* Misc ==================================================================== */
 /**
- * 1. Add the correct display in IE 10+.
- */
-template {
-  display: none; /* 1 */
-}
-
-/**
- * 1. Add the correct display in IE 10.
+ 1. Add the correct display in IE 10.
  */
 [hidden] {
   display: none; /* 1 */
@@ -299,39 +255,47 @@ template {
 
 /* Forms =================================================================== */
 /**
- 1. Correct the margin and padding in all browsers.
+ 1. Correct the padding in Firefox.
  */
-form,
 fieldset {
-  margin: 0; /* 1 */
   padding: 0; /* 1 */
 }
 
 /**
  1. Correct the text wrapping in Edge and IE.
+ 2. Correct the color inheritance from `fieldset` elements in IE.
+ 3. Remove the padding so developers are not caught out when they zero out
+ `fieldset` elements in all browsers.
  */
 legend {
-  display: block;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-  color: inherit;
-  white-space: normal;
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
- 1. Remove the margin in Firefox and Safari.
- 2. Change the font styles in all browsers.
+ 1. Clickable labels
+ */
+label[for] {
+  cursor: pointer; /* 1 */
+}
+
+/**
+ 1. Change the font styles in all browsers.
+ 2. Remove the margin in Firefox and Safari.
  */
 button,
 input,
 optgroup,
 select,
 textarea {
-  margin: 0; /* 1 */
-  font-family: inherit; /* 2 */
-  font-size: 100%; /* 2 */
-  line-height: 1; /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: inherit; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -352,8 +316,6 @@ select {
 
 /**
  1. Correct the inability to style clickable types in iOS and Safari.
- 2. Remove the inner border and padding in Firefox.
- 3. Restore the focus styles unset by the previous rule.
  */
 button,
 [type=button],
@@ -361,61 +323,62 @@ button,
 [type=submit] {
   -webkit-appearance: button; /* 1 */
 }
+
+/**
+ 1. Remove the inner border and padding in Firefox.
+ */
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
 [type=submit]::-moz-focus-inner {
-  border-style: none; /* 2 */
-  padding: 0; /* 2 */
-}
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText; /* 3 */
-}
-
-/**
- 1. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline; /* 1 */
-}
-
-/**
- 1. Remove the block vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto; /* 1 */
-}
-
-/**
- 1. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
+  border-style: none; /* 1 */
   padding: 0; /* 1 */
 }
 
 /**
+ 1. Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText; /* 1 */
+}
+
+/**
+ 1. Add the correct box sizing in IE 10.
+ 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
  1. Correct the cursor style of increment and decrement buttons in Chrome.
+ 2. Fix appearance for Firefox
  */
 [type=number]::-webkit-inner-spin-button,
 [type=number]::-webkit-outer-spin-button {
   height: auto; /* 1 */
+  -moz-appearance: textfield; /* 2 */
 }
 
 /**
  1. Correct the odd appearance in Chrome and Safari.
  2. Correct the outline style in Safari.
- 3. Remove the inner padding in Chrome and Safari on macOS.
  */
 [type=search] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
+
+/**
+ 1. Remove the inner padding in Chrome and Safari on macOS.
+ */
 [type=search]::-webkit-search-decoration {
-  -webkit-appearance: none; /* 3 */
+  -webkit-appearance: none; /* 1 */
 }
 
 /**
@@ -425,4 +388,18 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
+}
+
+/**
+ 1. Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; /* 1 */
+}
+
+/**
+ 1. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; /* 1 */
 }
