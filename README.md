@@ -42,7 +42,7 @@ SCSS files located in the `root` directory:
 To import all fonts, you can use:
 
 ```css
-@import "~@wikiline/uikit-reboot/reboot.scss";
+@import "~@wikiline/uikit-reboot/reboot";
 ```
 
 ## Licensing
